@@ -5,13 +5,16 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class Campeonato {
+    
+    public static ArrayList<Partida> partidas = new ArrayList<>();
 
     public static ArrayList<Jogador> artilharia = new ArrayList<>();
     public static ArrayList<Time> tabelaGrupos = new ArrayList<>();
 
     public static void simulaJogo(Data data, Time casa, Time visitante) {
         Random aleatorio = new Random();
-        Partida partida = new Partida(casa, visitante);
+        Partida partida = new Partida(casa, visitante,data);
+        partidas.add(partida);
         int A, B;
         for (int i = 0; i < 10; i++) {
             A = (aleatorio.nextInt(10) * casa.mediaAtacantes()) / 100;
@@ -182,7 +185,8 @@ public class Campeonato {
 
     public static Time simulaJogoCopa(Data data, Time casa, Time visitante) {
         Random aleatorio = new Random();
-        Partida partida = new Partida(casa, visitante);
+        Partida partida = new Partida(casa, visitante,data);
+        partidas.add(partida);
         int A, B;
         int golPenaltiCasa, golPenaltiVisitante;
 

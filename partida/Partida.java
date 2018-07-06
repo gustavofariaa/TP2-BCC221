@@ -9,13 +9,20 @@ public class Partida {
     private int golsCasa;
     private int golsVisitante;
     private Boolean penalti;
+    private final String data;
 
-    public Partida(Time casa, Time visitante) {
+    public Partida(Time casa, Time visitante, Data data) {
         this.casa = casa;
         this.visitante = visitante;
         this.golsCasa = 0;
         this.golsVisitante = 0;
         this.penalti = false;
+        String ar = data.getDia() + " / " + data.getMes() + " / " + data.getAno();
+        this.data = ar;
+    }
+
+    public String getData() {
+        return this.data;
     }
 
     public void golCasa() {
