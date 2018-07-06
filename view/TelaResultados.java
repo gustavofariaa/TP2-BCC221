@@ -1,12 +1,16 @@
 package view;
-
+import partida.Campeonato;
+import partida.Partida;
 public class TelaResultados extends javax.swing.JFrame {
 
     private static int fase;
+    private int posPartida;
 
     public TelaResultados() {
         initComponents();
         fase = 1;
+        posPartida = 0;
+        exibir();
     }
 
     @SuppressWarnings("unchecked")
@@ -597,24 +601,188 @@ public class TelaResultados extends javax.swing.JFrame {
         Menu.controle = false;
     }//GEN-LAST:event_bSairActionPerformed
 
-    private void bAntActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bAntActionPerformed
-        //LOGICA PARA EXIBIÇÃO DA TELA DE RESULTADOS ANTERIOR
-        if (fase > 1) {
-            fase--;
+    public void exibir()
+    {
+        Partida p1;
             switch (fase) {
                 case 4:
                     tFase.setText("OITAVAS DE FINAL");
 
                     tResultado03.setVisible(true);
+                    p1 =  Campeonato.partidas.get(48);
+                    tResultado03.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData03.setText(p1.getData());
+                    bandeira05.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira06.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                    
                     tResultado04.setVisible(true);
+                    p1 =  Campeonato.partidas.get(49);
+                    tResultado04.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData04.setText(p1.getData());
+                    bandeira21.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    bandeira22.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                    
+                    tResultado11.setVisible(true);
+                    p1 =  Campeonato.partidas.get(50);
+                    tResultado11.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData11.setText(p1.getData());
+                    bandeira07.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    bandeira08.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                    
+                    tResultado12.setVisible(true);
+                    p1 =  Campeonato.partidas.get(51);
+                    tResultado12.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData12.setText(p1.getData());
+                    bandeira23.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira24.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                    
+                    
+                    
+                    
+                    
+                    tResultado05.setVisible(true);
+                    p1 =  Campeonato.partidas.get(52);
+                    tResultado05.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData05.setText(p1.getData());
+                    bandeira09.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira10.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                    
+                    tResultado13.setVisible(true);
+                    p1 =  Campeonato.partidas.get(53);
+                    tResultado13.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData13.setText(p1.getData());
+                    bandeira25.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    bandeira26.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                    
+                    tResultado06.setVisible(true);
+                    p1 =  Campeonato.partidas.get(54);
+                    tResultado06.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData06.setText(p1.getData());
+                    bandeira11.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    bandeira12.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                    
+                    tResultado14.setVisible(true);
+                    p1 =  Campeonato.partidas.get(55);
+                    tResultado14.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData14.setText(p1.getData());
+                    bandeira27.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira28.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+
+                    tResultado03.setVisible(true);
+                    tResultado04.setVisible(true);
+                    tResultado05.setVisible(true);
+                    tResultado06.setVisible(true);
                     tResultado11.setVisible(true);
                     tResultado12.setVisible(true);
+                    tResultado13.setVisible(true);
+                    tResultado14.setVisible(true);
+                    
+                    tData03.setVisible(true);
+                    tData04.setVisible(true);
+                    tData05.setVisible(true);
+                    tData06.setVisible(true);
+                    tData11.setVisible(true);
+                    tData12.setVisible(true);
+                    tData13.setVisible(true);
+                    tData14.setVisible(true);
 
+
+                    bandeira05.setVisible(true);
+                    bandeira06.setVisible(true);
+                    bandeira07.setVisible(true);
+                    bandeira08.setVisible(true);
+                    bandeira09.setVisible(true);
+                    bandeira10.setVisible(true);
+                    bandeira11.setVisible(true);
+                    bandeira12.setVisible(true);
+                    bandeira21.setVisible(true);
+                    bandeira22.setVisible(true);
+                    bandeira23.setVisible(true);
+                    bandeira24.setVisible(true);
+                    bandeira25.setVisible(true);
+                    bandeira26.setVisible(true);
+                    bandeira27.setVisible(true);
+                    bandeira28.setVisible(true);
+                    
+                    tResultado01.setVisible(false);
+                    tResultado02.setVisible(false);
+                    tResultado07.setVisible(false);
+                    tResultado08.setVisible(false);
+                    tResultado09.setVisible(false);
+                    tResultado10.setVisible(false);
+                    tResultado15.setVisible(false);
+                    tResultado16.setVisible(false);
+
+                    tData01.setVisible(false);
+                    tData02.setVisible(false);
+                    tData07.setVisible(false);
+                    tData08.setVisible(false);
+                    tData09.setVisible(false);
+                    tData10.setVisible(false);
+                    tData15.setVisible(false);
+                    tData16.setVisible(false);
+
+                 
+                    bandeira01.setVisible(false);
+                    bandeira02.setVisible(false);
+                    bandeira03.setVisible(false);
+                    bandeira04.setVisible(false);
+                    bandeira13.setVisible(false);
+                    bandeira14.setVisible(false);
+                    bandeira15.setVisible(false);
+                    bandeira16.setVisible(false);
+                    bandeira17.setVisible(false);
+                    bandeira18.setVisible(false);
+                    bandeira19.setVisible(false);
+                    bandeira20.setVisible(false);
+                    bandeira29.setVisible(false);
+                    bandeira30.setVisible(false);
+                    bandeira31.setVisible(false);
+                    bandeira32.setVisible(false);
+                    break;
+                case 5:
+                    tFase.setText("QUARTAS DE FINAL");
+
+                    tResultado03.setVisible(true);
+                    p1 =  Campeonato.partidas.get(56);
+                    tResultado03.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData03.setText(p1.getData());
+                    bandeira05.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    bandeira06.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                    
+                    tResultado11.setVisible(true);
+                    p1 =  Campeonato.partidas.get(57);
+                    tResultado11.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData11.setText(p1.getData());
+                    bandeira21.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    bandeira22.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+
+                    tResultado04.setVisible(true);
+                    p1 =  Campeonato.partidas.get(58);
+                    tResultado04.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData04.setText(p1.getData());
+                    bandeira07.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    bandeira08.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                    
+                    
+                    tResultado12.setVisible(true);
+                    p1 =  Campeonato.partidas.get(59);
+                    tResultado12.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData12.setText(p1.getData());
+                    bandeira23.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    bandeira24.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                    
+                    
                     tData03.setVisible(true);
                     tData04.setVisible(true);
                     tData11.setVisible(true);
                     tData12.setVisible(true);
-
+                    
+                    
                     bandeira05.setVisible(true);
                     bandeira06.setVisible(true);
                     bandeira07.setVisible(true);
@@ -623,99 +791,38 @@ public class TelaResultados extends javax.swing.JFrame {
                     bandeira22.setVisible(true);
                     bandeira23.setVisible(true);
                     bandeira24.setVisible(true);
-                    break;
-                case 5:
-                    tFase.setText("QUARTAS DE FINAL");
-
-                    tResultado02.setVisible(true);
-                    tResultado10.setVisible(true);
-
-                    tData02.setVisible(true);
-                    tData10.setVisible(true);
-
-                    bandeira03.setVisible(true);
-                    bandeira04.setVisible(true);
-                    bandeira19.setVisible(true);
-                    bandeira20.setVisible(true);
-                    break;
-                case 6:
-                    tFase.setText("SEMI FINAL");
-
-                    tResultado09.setVisible(true);
-
-                    tData09.setVisible(true);
-
-                    bandeira17.setVisible(true);
-                    bandeira18.setVisible(true);
-                    break;
-                default:
-                    tFase.setText("FASE DE GRUPOS " + fase + "/3");
-
-                    tResultado05.setVisible(true);
-                    tResultado06.setVisible(true);
-                    tResultado07.setVisible(true);
-                    tResultado08.setVisible(true);
-                    tResultado13.setVisible(true);
-                    tResultado14.setVisible(true);
-                    tResultado15.setVisible(true);
-                    tResultado16.setVisible(true);
-
-                    tData05.setVisible(true);
-                    tData06.setVisible(true);
-                    tData07.setVisible(true);
-                    tData08.setVisible(true);
-                    tData13.setVisible(true);
-                    tData14.setVisible(true);
-                    tData15.setVisible(true);
-                    tData16.setVisible(true);
-
-                    bandeira09.setVisible(true);
-                    bandeira10.setVisible(true);
-                    bandeira11.setVisible(true);
-                    bandeira12.setVisible(true);
-                    bandeira13.setVisible(true);
-                    bandeira14.setVisible(true);
-                    bandeira15.setVisible(true);
-                    bandeira16.setVisible(true);
-                    bandeira25.setVisible(true);
-                    bandeira26.setVisible(true);
-                    bandeira27.setVisible(true);
-                    bandeira28.setVisible(true);
-                    bandeira29.setVisible(true);
-                    bandeira30.setVisible(true);
-                    bandeira31.setVisible(true);
-                    bandeira32.setVisible(true);
-                    break;
-            }
-        }
-    }//GEN-LAST:event_bAntActionPerformed
-
-    private void bProxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bProxActionPerformed
-        //LOGICA PARA EXIBIÇÃO DA TELA DE RESULTADOS SEGUINTE
-        if (fase < 7) {
-            fase++;
-            switch (fase) {
-                case 4:
-                    tFase.setText("OITAVAS DE FINAL");
-
+                    
+                    tResultado01.setVisible(false);
+                    tResultado02.setVisible(false);
                     tResultado05.setVisible(false);
                     tResultado06.setVisible(false);
                     tResultado07.setVisible(false);
                     tResultado08.setVisible(false);
+                    tResultado09.setVisible(false);
+                    tResultado10.setVisible(false);
                     tResultado13.setVisible(false);
                     tResultado14.setVisible(false);
                     tResultado15.setVisible(false);
                     tResultado16.setVisible(false);
 
+                    tData01.setVisible(false);
+                    tData02.setVisible(false);
                     tData05.setVisible(false);
                     tData06.setVisible(false);
                     tData07.setVisible(false);
                     tData08.setVisible(false);
+                    tData09.setVisible(false);
+                    tData10.setVisible(false);
                     tData13.setVisible(false);
                     tData14.setVisible(false);
                     tData15.setVisible(false);
                     tData16.setVisible(false);
 
+                 
+                    bandeira01.setVisible(false);
+                    bandeira02.setVisible(false);
+                    bandeira03.setVisible(false);
+                    bandeira04.setVisible(false);
                     bandeira09.setVisible(false);
                     bandeira10.setVisible(false);
                     bandeira11.setVisible(false);
@@ -724,6 +831,10 @@ public class TelaResultados extends javax.swing.JFrame {
                     bandeira14.setVisible(false);
                     bandeira15.setVisible(false);
                     bandeira16.setVisible(false);
+                    bandeira17.setVisible(false);
+                    bandeira18.setVisible(false);
+                    bandeira19.setVisible(false);
+                    bandeira20.setVisible(false);
                     bandeira25.setVisible(false);
                     bandeira26.setVisible(false);
                     bandeira27.setVisible(false);
@@ -733,57 +844,778 @@ public class TelaResultados extends javax.swing.JFrame {
                     bandeira31.setVisible(false);
                     bandeira32.setVisible(false);
                     break;
-                case 5:
-                    tFase.setText("QUARTAS DE FINAL");
-
-                    tResultado03.setVisible(false);
-                    tResultado04.setVisible(false);
-                    tResultado11.setVisible(false);
-                    tResultado12.setVisible(false);
-
-                    tData03.setVisible(false);
-                    tData04.setVisible(false);
-                    tData11.setVisible(false);
-                    tData12.setVisible(false);
-
-                    bandeira05.setVisible(false);
-                    bandeira06.setVisible(false);
-                    bandeira07.setVisible(false);
-                    bandeira08.setVisible(false);
-                    bandeira21.setVisible(false);
-                    bandeira22.setVisible(false);
-                    bandeira23.setVisible(false);
-                    bandeira24.setVisible(false);
-                    break;
                 case 6:
                     tFase.setText("SEMI FINAL");
 
+                    tResultado03.setVisible(true);
+                    p1 =  Campeonato.partidas.get(60);
+                    tResultado03.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData03.setText(p1.getData());
+                    bandeira05.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    bandeira06.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                    
+                    tResultado11.setVisible(true);
+                    p1 =  Campeonato.partidas.get(61);
+                    tResultado11.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData11.setText(p1.getData());
+                    bandeira21.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    bandeira22.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+
+                    
+                    tData03.setVisible(true);
+                   
+                    tData11.setVisible(true);
+                    
+                    
+                    bandeira05.setVisible(true);
+                    bandeira06.setVisible(true);
+                
+                    bandeira21.setVisible(true);
+                    bandeira22.setVisible(true);
+                    
+                    tResultado01.setVisible(false);
                     tResultado02.setVisible(false);
+                    tResultado04.setVisible(false);
+                    tResultado05.setVisible(false);
+                    tResultado06.setVisible(false);
+                    tResultado07.setVisible(false);
+                    tResultado08.setVisible(false);
+                    tResultado09.setVisible(false);
                     tResultado10.setVisible(false);
+                    tResultado12.setVisible(false);
+                    tResultado13.setVisible(false);
+                    tResultado14.setVisible(false);
+                    tResultado15.setVisible(false);
+                    tResultado16.setVisible(false);
 
+                    tData01.setVisible(false);
                     tData02.setVisible(false);
+                    tData04.setVisible(false);
+                    tData05.setVisible(false);
+                    tData06.setVisible(false);
+                    tData07.setVisible(false);
+                    tData08.setVisible(false);
+                    tData09.setVisible(false);
                     tData10.setVisible(false);
+                    tData12.setVisible(false);
+                    tData13.setVisible(false);
+                    tData14.setVisible(false);
+                    tData15.setVisible(false);
+                    tData16.setVisible(false);
 
+                 
+                    bandeira01.setVisible(false);
+                    bandeira02.setVisible(false);
                     bandeira03.setVisible(false);
                     bandeira04.setVisible(false);
+                    bandeira07.setVisible(false);
+                    bandeira08.setVisible(false);
+                    bandeira09.setVisible(false);
+                    bandeira10.setVisible(false);
+                    bandeira11.setVisible(false);
+                    bandeira12.setVisible(false);
+                    bandeira13.setVisible(false);
+                    bandeira14.setVisible(false);
+                    bandeira15.setVisible(false);
+                    bandeira16.setVisible(false);
+                    bandeira17.setVisible(false);
+                    bandeira18.setVisible(false);
                     bandeira19.setVisible(false);
                     bandeira20.setVisible(false);
+                    bandeira23.setVisible(false);
+                    bandeira24.setVisible(false);
+                    bandeira25.setVisible(false);
+                    bandeira26.setVisible(false);
+                    bandeira27.setVisible(false);
+                    bandeira28.setVisible(false);
+                    bandeira29.setVisible(false);
+                    bandeira30.setVisible(false);
+                    bandeira31.setVisible(false);
+                    bandeira32.setVisible(false);
                     break;
                 case 7:
                     tFase.setText("FINAL");
 
+                    tResultado03.setVisible(true);
+                    p1 =  Campeonato.partidas.get(62);
+                    tResultado03.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData03.setText(p1.getData());
+                    bandeira05.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    bandeira06.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                    
+                
+                    
+                    tData03.setVisible(true);
+                   
+                    
+                    
+                    bandeira05.setVisible(true);
+                    bandeira06.setVisible(true);
+                
+                   
+                    
+                    tResultado01.setVisible(false);
+                    tResultado02.setVisible(false);
+                    tResultado04.setVisible(false);
+                    tResultado05.setVisible(false);
+                    tResultado06.setVisible(false);
+                    tResultado07.setVisible(false);
+                    tResultado08.setVisible(false);
                     tResultado09.setVisible(false);
+                    tResultado10.setVisible(false);
+                    tResultado11.setVisible(false);
 
+                    tResultado12.setVisible(false);
+                    tResultado13.setVisible(false);
+                    tResultado14.setVisible(false);
+                    tResultado15.setVisible(false);
+                    tResultado16.setVisible(false);
+
+                    tData01.setVisible(false);
+                    tData02.setVisible(false);
+                    tData04.setVisible(false);
+                    tData05.setVisible(false);
+                    tData06.setVisible(false);
+                    tData07.setVisible(false);
+                    tData08.setVisible(false);
                     tData09.setVisible(false);
+                    tData10.setVisible(false);
+                    tData11.setVisible(false);
 
+                    tData12.setVisible(false);
+                    tData13.setVisible(false);
+                    tData14.setVisible(false);
+                    tData15.setVisible(false);
+                    tData16.setVisible(false);
+
+                 
+                    bandeira01.setVisible(false);
+                    bandeira02.setVisible(false);
+                    bandeira03.setVisible(false);
+                    bandeira04.setVisible(false);
+                    bandeira07.setVisible(false);
+                    bandeira08.setVisible(false);
+                    bandeira09.setVisible(false);
+                    bandeira10.setVisible(false);
+                    bandeira11.setVisible(false);
+                    bandeira12.setVisible(false);
+                    bandeira13.setVisible(false);
+                    bandeira14.setVisible(false);
+                    bandeira15.setVisible(false);
+                    bandeira16.setVisible(false);
                     bandeira17.setVisible(false);
                     bandeira18.setVisible(false);
+                    bandeira19.setVisible(false);
+                    bandeira20.setVisible(false);
+                     bandeira21.setVisible(false);
+                    bandeira22.setVisible(false);
+                    bandeira23.setVisible(false);
+                    bandeira24.setVisible(false);
+                    bandeira25.setVisible(false);
+                    bandeira26.setVisible(false);
+                    bandeira27.setVisible(false);
+                    bandeira28.setVisible(false);
+                    bandeira29.setVisible(false);
+                    bandeira30.setVisible(false);
+                    bandeira31.setVisible(false);
+                    bandeira32.setVisible(false);
                     break;
-                default:
+                
+                    
+                case 1:
+                {
                     tFase.setText("FASE DE GRUPOS " + fase + "/3");
+                    
+                    
+                    
+                    p1 =  Campeonato.partidas.get(0);
+                    tResultado01.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData01.setText(p1.getData());
+                    bandeira01.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira02.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+
+                     p1 =  Campeonato.partidas.get(1);
+                    tResultado09.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData09.setText(p1.getData());
+                    bandeira17.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira18.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+
+
+                    p1 =  Campeonato.partidas.get(6);
+                    tResultado02.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData02.setText(p1.getData());
+                    bandeira03.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira04.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+
+
+
+                     p1 =  Campeonato.partidas.get(7);
+                    tResultado10.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData10.setText(p1.getData());
+                    bandeira19.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira20.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                   
+                    p1 =  Campeonato.partidas.get(12);
+                    tResultado03.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData03.setText(p1.getData());
+                    bandeira05.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira06.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                   
+                    p1 =  Campeonato.partidas.get(13);
+                    tResultado11.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData11.setText(p1.getData());
+                    bandeira21.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira22.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                    
+                    p1 =  Campeonato.partidas.get(18);
+                    tResultado04.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                   tData04.setText(p1.getData());
+                   bandeira07.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira08.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                    
+                    p1 =  Campeonato.partidas.get(19);
+                    tResultado12.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData12.setText(p1.getData());
+                    bandeira23.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira24.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                    
+                    
+                    p1 =  Campeonato.partidas.get(24);
+                    tResultado05.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData05.setText(p1.getData());
+                    bandeira09.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira10.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                    
+                    p1 =  Campeonato.partidas.get(25);
+                    tResultado13.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData13.setText(p1.getData());
+                    bandeira25.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira26.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                    
+                    p1 =  Campeonato.partidas.get(30);
+                    tResultado06.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData06.setText(p1.getData());
+                    bandeira11.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira12.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                    
+                    p1 =  Campeonato.partidas.get(31);
+                    tResultado14.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData14.setText(p1.getData());
+                    bandeira27.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira28.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                    
+                    
+                    p1 =  Campeonato.partidas.get(36);
+                    tResultado07.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData07.setText(p1.getData());
+                    bandeira13.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira14.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                    
+                     p1 =  Campeonato.partidas.get(37);
+                    tResultado15.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData15.setText(p1.getData());
+                    bandeira29.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira30.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                    
+                     p1 =  Campeonato.partidas.get(42);
+                    tResultado08.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData08.setText(p1.getData());
+                    bandeira15.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira16.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                    
+                     p1 =  Campeonato.partidas.get(43);
+                    tResultado16.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData16.setText(p1.getData());
+                    bandeira31.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira32.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                    
+                    
+                    tResultado01.setVisible(true);
+                    tResultado02.setVisible(true);
+                    tResultado03.setVisible(true);
+                    tResultado04.setVisible(true);
+                    tResultado05.setVisible(true);
+                    tResultado06.setVisible(true);
+                    tResultado07.setVisible(true);
+                    tResultado09.setVisible(true);
+                    tResultado10.setVisible(true);
+                    tResultado11.setVisible(true);
+                    tResultado12.setVisible(true);
+                    tResultado13.setVisible(true);
+                    tResultado13.setVisible(true);
+                    tResultado14.setVisible(true);
+                    tResultado15.setVisible(true);
+                    tResultado16.setVisible(true);
+
+                    tData01.setVisible(true);
+                    tData02.setVisible(true);
+                    tData03.setVisible(true);
+                    tData04.setVisible(true);
+                    tData05.setVisible(true);
+                    tData06.setVisible(true);
+                    tData07.setVisible(true);
+                    tData08.setVisible(true);
+                    tData09.setVisible(true);
+                    tData10.setVisible(true);
+                    tData11.setVisible(true);
+                    tData12.setVisible(true);
+                    tData13.setVisible(true);
+                    tData14.setVisible(true);
+                    tData15.setVisible(true);
+                    tData16.setVisible(true);
+
+                    bandeira01.setVisible(true);
+                    bandeira02.setVisible(true);
+                    bandeira03.setVisible(true);
+                    bandeira04.setVisible(true);
+                    bandeira05.setVisible(true);
+                    bandeira06.setVisible(true);
+                    bandeira07.setVisible(true);
+                    bandeira08.setVisible(true);
+                    bandeira09.setVisible(true);
+                    bandeira10.setVisible(true);
+                    bandeira11.setVisible(true);
+                    bandeira12.setVisible(true);
+                    bandeira13.setVisible(true);
+                    bandeira14.setVisible(true);
+                    bandeira15.setVisible(true);
+                    bandeira16.setVisible(true);
+                    bandeira17.setVisible(true);
+                    bandeira18.setVisible(true);
+                    bandeira19.setVisible(true);
+                    bandeira20.setVisible(true);
+                    bandeira21.setVisible(true);
+                    bandeira22.setVisible(true);
+                    bandeira23.setVisible(true);
+                    bandeira24.setVisible(true);
+                    bandeira25.setVisible(true);
+                    bandeira26.setVisible(true);
+                    bandeira27.setVisible(true);
+                    bandeira28.setVisible(true);
+                    bandeira29.setVisible(true);
+                    bandeira30.setVisible(true);
+                    bandeira31.setVisible(true);
+                    bandeira32.setVisible(true);
                     break;
+                }
+                case 2:
+                {
+                    tFase.setText("FASE DE GRUPOS " + fase + "/3");
+                    
+                    
+                    
+                    p1 =  Campeonato.partidas.get(2);
+                    tResultado01.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData01.setText(p1.getData());
+                    bandeira01.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira02.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+
+                     p1 =  Campeonato.partidas.get(3);
+                    tResultado09.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData09.setText(p1.getData());
+                    bandeira17.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira18.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+
+
+                    p1 =  Campeonato.partidas.get(8);
+                    tResultado02.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData02.setText(p1.getData());
+                    bandeira03.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira04.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+
+
+
+                     p1 =  Campeonato.partidas.get(9);
+                    tResultado10.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData10.setText(p1.getData());
+                    bandeira19.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira20.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                   
+                    p1 =  Campeonato.partidas.get(14);
+                    tResultado03.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData03.setText(p1.getData());
+                    bandeira05.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira06.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                   
+                    p1 =  Campeonato.partidas.get(15);
+                    tResultado11.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData11.setText(p1.getData());
+                    bandeira21.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira22.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                    
+                    p1 =  Campeonato.partidas.get(20);
+                    tResultado04.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                   tData04.setText(p1.getData());
+                   bandeira07.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira08.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                    
+                    p1 =  Campeonato.partidas.get(21);
+                    tResultado12.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData12.setText(p1.getData());
+                    bandeira23.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira24.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                    
+                    
+                    p1 =  Campeonato.partidas.get(26);
+                    tResultado05.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData05.setText(p1.getData());
+                    bandeira09.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira10.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                    
+                    p1 =  Campeonato.partidas.get(27);
+                    tResultado13.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData13.setText(p1.getData());
+                    bandeira25.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira26.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                    
+                    p1 =  Campeonato.partidas.get(32);
+                    tResultado06.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData06.setText(p1.getData());
+                    bandeira11.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira12.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                    
+                    p1 =  Campeonato.partidas.get(33);
+                    tResultado14.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData14.setText(p1.getData());
+                    bandeira27.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira28.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                    
+                    
+                    p1 =  Campeonato.partidas.get(38);
+                    tResultado07.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData07.setText(p1.getData());
+                    bandeira13.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira14.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                    
+                     p1 =  Campeonato.partidas.get(39);
+                    tResultado15.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData15.setText(p1.getData());
+                    bandeira29.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira30.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                    
+                     p1 =  Campeonato.partidas.get(44);
+                    tResultado08.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData08.setText(p1.getData());
+                    bandeira15.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira16.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                    
+                     p1 =  Campeonato.partidas.get(45);
+                    tResultado16.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData16.setText(p1.getData());
+                    bandeira31.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira32.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+
+                    tResultado01.setVisible(true);
+                    tResultado02.setVisible(true);
+                    tResultado03.setVisible(true);
+                    tResultado04.setVisible(true);
+                    tResultado05.setVisible(true);
+                    tResultado06.setVisible(true);
+                    tResultado07.setVisible(true);
+                    tResultado09.setVisible(true);
+                    tResultado10.setVisible(true);
+                    tResultado11.setVisible(true);
+                    tResultado12.setVisible(true);
+                    tResultado13.setVisible(true);
+                    tResultado13.setVisible(true);
+                    tResultado14.setVisible(true);
+                    tResultado15.setVisible(true);
+                    tResultado16.setVisible(true);
+
+                    tData01.setVisible(true);
+                    tData02.setVisible(true);
+                    tData03.setVisible(true);
+                    tData04.setVisible(true);
+                    tData05.setVisible(true);
+                    tData06.setVisible(true);
+                    tData07.setVisible(true);
+                    tData08.setVisible(true);
+                    tData09.setVisible(true);
+                    tData10.setVisible(true);
+                    tData11.setVisible(true);
+                    tData12.setVisible(true);
+                    tData13.setVisible(true);
+                    tData14.setVisible(true);
+                    tData15.setVisible(true);
+                    tData16.setVisible(true);
+
+                    bandeira01.setVisible(true);
+                    bandeira02.setVisible(true);
+                    bandeira03.setVisible(true);
+                    bandeira04.setVisible(true);
+                    bandeira05.setVisible(true);
+                    bandeira06.setVisible(true);
+                    bandeira07.setVisible(true);
+                    bandeira08.setVisible(true);
+                    bandeira09.setVisible(true);
+                    bandeira10.setVisible(true);
+                    bandeira11.setVisible(true);
+                    bandeira12.setVisible(true);
+                    bandeira13.setVisible(true);
+                    bandeira14.setVisible(true);
+                    bandeira15.setVisible(true);
+                    bandeira16.setVisible(true);
+                    bandeira17.setVisible(true);
+                    bandeira18.setVisible(true);
+                    bandeira19.setVisible(true);
+                    bandeira20.setVisible(true);
+                    bandeira21.setVisible(true);
+                    bandeira22.setVisible(true);
+                    bandeira23.setVisible(true);
+                    bandeira24.setVisible(true);
+                    bandeira25.setVisible(true);
+                    bandeira26.setVisible(true);
+                    bandeira27.setVisible(true);
+                    bandeira28.setVisible(true);
+                    bandeira29.setVisible(true);
+                    bandeira30.setVisible(true);
+                    bandeira31.setVisible(true);
+                    bandeira32.setVisible(true);
+                    break;
+                }
+                case 3:
+                {
+                    tFase.setText("FASE DE GRUPOS " + fase + "/3");
+                    
+                  
+                    
+                    
+                    p1 =  Campeonato.partidas.get(4);
+                    tResultado01.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData01.setText(p1.getData());
+                    bandeira01.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira02.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+
+                     p1 =  Campeonato.partidas.get(5);
+                    tResultado09.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData09.setText(p1.getData());
+                    bandeira17.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira18.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+
+
+                    p1 =  Campeonato.partidas.get(10);
+                    tResultado02.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData02.setText(p1.getData());
+                    bandeira03.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira04.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+
+
+
+                     p1 =  Campeonato.partidas.get(11);
+                    tResultado10.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData10.setText(p1.getData());
+                    bandeira19.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira20.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                   
+                    p1 =  Campeonato.partidas.get(16);
+                    tResultado03.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData03.setText(p1.getData());
+                    bandeira05.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira06.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                   
+                    p1 =  Campeonato.partidas.get(17);
+                    tResultado11.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData11.setText(p1.getData());
+                    bandeira21.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira22.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                    
+                    p1 =  Campeonato.partidas.get(22);
+                    tResultado04.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                   tData04.setText(p1.getData());
+                   bandeira07.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira08.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                    
+                    p1 =  Campeonato.partidas.get(23);
+                    tResultado12.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData12.setText(p1.getData());
+                    bandeira23.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira24.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                    
+                    
+                    p1 =  Campeonato.partidas.get(28);
+                    tResultado05.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData05.setText(p1.getData());
+                    bandeira09.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira10.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                    
+                    p1 =  Campeonato.partidas.get(29);
+                    tResultado13.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData13.setText(p1.getData());
+                    bandeira25.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira26.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                    
+                    p1 =  Campeonato.partidas.get(34);
+                    tResultado06.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData06.setText(p1.getData());
+                    bandeira11.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira12.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                    
+                    p1 =  Campeonato.partidas.get(35);
+                    tResultado14.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData14.setText(p1.getData());
+                    bandeira27.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira28.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                    
+                    
+                    p1 =  Campeonato.partidas.get(40);
+                    tResultado07.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData07.setText(p1.getData());
+                    bandeira13.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira14.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                    
+                     p1 =  Campeonato.partidas.get(41);
+                    tResultado15.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData15.setText(p1.getData());
+                    bandeira29.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira30.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                    
+                     p1 =  Campeonato.partidas.get(46);
+                    tResultado08.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData08.setText(p1.getData());
+                    bandeira15.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira16.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+                    
+                     p1 =  Campeonato.partidas.get(47);
+                    tResultado16.setText(p1.getCasa().getCodNome() + " " + p1.getGolsCasa() + " X " + p1.getGolsVisitante() + " " + p1.getVisitante().getCodNome());
+                    tData16.setText(p1.getData());
+                    bandeira31.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getCasa().getBandeiraMini())));
+                    
+                    bandeira32.setIcon(new javax.swing.ImageIcon(getClass().getResource(p1.getVisitante().getBandeiraMini())));
+
+                    tResultado01.setVisible(true);
+                    tResultado02.setVisible(true);
+                    tResultado03.setVisible(true);
+                    tResultado04.setVisible(true);
+                    tResultado05.setVisible(true);
+                    tResultado06.setVisible(true);
+                    tResultado07.setVisible(true);
+                    tResultado09.setVisible(true);
+                    tResultado10.setVisible(true);
+                    tResultado11.setVisible(true);
+                    tResultado12.setVisible(true);
+                    tResultado13.setVisible(true);
+                    tResultado13.setVisible(true);
+                    tResultado14.setVisible(true);
+                    tResultado15.setVisible(true);
+                    tResultado16.setVisible(true);
+
+                    tData01.setVisible(true);
+                    tData02.setVisible(true);
+                    tData03.setVisible(true);
+                    tData04.setVisible(true);
+                    tData05.setVisible(true);
+                    tData06.setVisible(true);
+                    tData07.setVisible(true);
+                    tData08.setVisible(true);
+                    tData09.setVisible(true);
+                    tData10.setVisible(true);
+                    tData11.setVisible(true);
+                    tData12.setVisible(true);
+                    tData13.setVisible(true);
+                    tData14.setVisible(true);
+                    tData15.setVisible(true);
+                    tData16.setVisible(true);
+
+                    bandeira01.setVisible(true);
+                    bandeira02.setVisible(true);
+                    bandeira03.setVisible(true);
+                    bandeira04.setVisible(true);
+                    bandeira05.setVisible(true);
+                    bandeira06.setVisible(true);
+                    bandeira07.setVisible(true);
+                    bandeira08.setVisible(true);
+                    bandeira09.setVisible(true);
+                    bandeira10.setVisible(true);
+                    bandeira11.setVisible(true);
+                    bandeira12.setVisible(true);
+                    bandeira13.setVisible(true);
+                    bandeira14.setVisible(true);
+                    bandeira15.setVisible(true);
+                    bandeira16.setVisible(true);
+                    bandeira17.setVisible(true);
+                    bandeira18.setVisible(true);
+                    bandeira19.setVisible(true);
+                    bandeira20.setVisible(true);
+                    bandeira21.setVisible(true);
+                    bandeira22.setVisible(true);
+                    bandeira23.setVisible(true);
+                    bandeira24.setVisible(true);
+                    bandeira25.setVisible(true);
+                    bandeira26.setVisible(true);
+                    bandeira27.setVisible(true);
+                    bandeira28.setVisible(true);
+                    bandeira29.setVisible(true);
+                    bandeira30.setVisible(true);
+                    bandeira31.setVisible(true);
+                    bandeira32.setVisible(true);
+                    break;
+                }
             }
-        }
+        
+        
+    }
+    private void bAntActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bAntActionPerformed
+        //LOGICA PARA EXIBIÇÃO DA TELA DE RESULTADOS ANTERIOR
+        if (fase > 1)
+            fase--;
+
+        exibir();
+           
+    }//GEN-LAST:event_bAntActionPerformed
+
+    private void bProxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bProxActionPerformed
+        //LOGICA PARA EXIBIÇÃO DA TELA DE RESULTADOS SEGUINTE
+        if (fase < 8) 
+            fase++;
+        exibir();
+           
     }//GEN-LAST:event_bProxActionPerformed
 
     public static void main(String args[]) {
