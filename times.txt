@@ -1,0 +1,480 @@
+RÚSSIA
+RUS
+/imagens/bandeiras/russia.png
+/imagens/bandeiras-mini/russia-mini.png
+/imagens/uniformes/russia.png
+Akinfeev
+Lunev
+Granat
+Kudryashov
+Sergey Ignashevich
+Mário Fernandes
+Miranchuk
+Smolov
+Dzyuba
+Chalov
+URUGUAI
+URU
+/imagens/bandeiras/uruguay.png
+/imagens/bandeiras-mini/uruguay-mini.png
+/imagens/uniformes/uruguay.png
+Fernando Muslera
+Martin Silva
+Diego Godín
+Sebastián Coates
+José Maria Giménez
+Maxi Pereira
+Cristhian Stuani
+Maximiliano Gómez
+Edinson Cavani
+Luis Suárez
+EGITO
+EGY
+/imagens/bandeiras/egypt.png
+/imagens/bandeiras-mini/egypt-mini.png
+/imagens/uniformes/egypt.png
+Essam El-Hadary
+Mohamed El-Shennawi
+Ahmed Fathi
+Ayman Ashraf
+Ahmed Elmohamady
+Omar Gaber
+Abdallah El-Said
+Mohamed Elnen
+Marwan Mohsen
+Mohamed Salah
+ARÁBIA SAUDITA
+KSA
+/imagens/bandeiras/saudi-arabia.png
+/imagens/bandeiras-mini/saudi-arabia-mini.png
+/imagens/uniformes/saudi-arabia.png
+Mohammed Al-Owais
+Abdullah Al-Mayuf
+Mansoor Al-Harbi
+Yasser Al-Shahrani
+Mohammed Al-Breik
+Motaz Hawsawi
+Fahad Al-Muwallad
+Mohammad Al-Sahlawi
+Muhannad Assiri
+Abdulmalek Al-Khaibri
+ESPANHA
+ESP
+/imagens/bandeiras/spain.png
+/imagens/bandeiras-mini/spain-mini.png
+/imagens/uniformes/spain.png
+De Gea
+Reina
+Carvajal
+Sergio Ramos
+Jordi Alba
+Piqué
+David Silva
+Diego Costa
+Isco
+Koke
+PORTUGAL
+POR
+/imagens/bandeiras/portugal.png
+/imagens/bandeiras-mini/portugal-mini.png
+/imagens/uniformes/portugal.png
+Anthony Lopes
+Rui Patrício
+Cédric Soares
+Mário Rui
+Pepe
+Raphael Guerreiro
+Bernardo Silva
+Ricardo Quaresma
+André Silva
+Cristiano Ronaldo
+IRÃ
+IRN
+/imagens/bandeiras/iran.png
+/imagens/bandeiras-mini/iran-mini.png
+/imagens/uniformes/iran.png
+Alireza Beiranvand
+Rashid Mazaheri
+Pouraliganji
+Majid Hosseini
+Ali Gholizadeh
+Roozbeh Cheshmi
+Alireza Jahanbakhsh
+Ashkan Dejageh
+Mehdi Taremi
+Reza Ghoochannejhad
+MARROCOS
+MAR
+/imagens/bandeiras/morocco.png
+/imagens/bandeiras-mini/morocco-mini.png
+/imagens/uniformes/morocco.png
+Munir Mohand Mohamed
+Yassine Bounou
+Mehdi Benatia
+Romain Saïss
+Manu Da Costa
+Achraf Hakimi
+Aziz Bouhaddouz
+Khalid Boutaïb
+Ayoub El Kaabi
+Youssef En-Nesyri
+FRANÇA
+FRA
+/imagens/bandeiras/france.png
+/imagens/bandeiras-mini/france-mini.png
+/imagens/uniformes/france.png
+Aréola
+Lloris
+Umtiti
+Varane
+Kimpembe
+Mendy
+Mbappé
+Dembélé
+Giroud
+Griezmann
+DINAMARCA
+DEN
+/imagens/bandeiras/denmark.png
+/imagens/bandeiras-mini/denmark-mini.png
+/imagens/uniformes/denmark.png
+Schmeichel
+Ronnow
+Kjaer
+Bjelland
+Zanka Jorgensen
+Christensen
+Jorgensen
+Cornelius
+Bendtner
+Sisto
+AUSTRÁLIA
+AUS
+/imagens/bandeiras/australia.png
+/imagens/bandeiras-mini/australia-mini.png
+/imagens/uniformes/australia.png
+Brad Jones
+Mathew Ryan
+Aziz Behich
+Milos Degenek
+Matthew Jurman
+James Meredith
+Daniel Arzani
+Tim Cahill
+Tomi Juric
+Mathew Leckie
+PERU
+PER
+/imagens/bandeiras/peru.png
+/imagens/bandeiras-mini/peru-mini.png
+/imagens/uniformes/peru.png
+Carlos Cáceda
+José Carvallo
+Luis Abram
+Luis Advíncula
+Pedro Aquino
+Miguel Araujo
+Raul Ruidíaz
+Jefferson Farfán
+Edison Flores
+Paolo Guerrero
+CROÁCIA
+CRO
+/imagens/bandeiras/croatia.png
+/imagens/bandeiras-mini/croatia-mini.png
+/imagens/uniformes/croatia.png
+Subasic
+Kalinic
+Vedran Corluka
+Vida
+Strinić
+Lovren
+Mandzukic
+Perisic
+Kalinic
+Kramaric
+NIGÉRIA
+NGA
+/imagens/bandeiras/nigeria.png
+/imagens/bandeiras-mini/nigeria-mini.png
+/imagens/uniformes/nigeria.png
+Ikechukwu Ezenwa
+Daniel Akpeyi
+William Ekong
+Leon Balogun
+Olaoluwa Aina
+Kenneth Omeruo
+Odion Ighalo
+Ahmed Musa
+Victor Moses
+Alex Iwobi
+ISLÂNDIA
+ISL
+/imagens/bandeiras/iceland.png
+/imagens/bandeiras-mini/iceland-mini.png
+/imagens/uniformes/iceland.png
+Hannes Pór Halldórsson
+Frederik Schram
+Ari Freyr Skúlason
+Hördur B. Magnússon
+Hólmar Örn Eyjólfsson
+Kári Árnason
+Rúrik Gíslason
+Björn B. Sigurdarson
+Albert Gudmundsson
+Alfred Finnbogason
+ARGENTINA
+ARG
+/imagens/bandeiras/argentina.png
+/imagens/bandeiras-mini/argentina-mini.png
+/imagens/uniformes/argentina.png
+Romero
+Caballero
+Mercado
+Otamendi
+Fazio
+Marcos Rojo
+Messi
+Agüero
+Higuaín
+Dybala
+BRASIL
+BRA
+/imagens/bandeiras/brazil.png
+/imagens/bandeiras-mini/brazil-mini.png
+/imagens/uniformes/brazil.png
+Alisson
+Cássio
+Marquinhos
+Thiago Silva
+Miranda
+Marcelo
+Roberto Firmino
+Neymar
+Gabriel Jesus
+Philippe Coutinho
+SUÍÇA
+SUI
+/imagens/bandeiras/switzerland.png
+/imagens/bandeiras-mini/switzerland-mini.png
+/imagens/uniformes/switzerland.png
+Roman Bürki
+Gregor Kobel
+Manuel Akanji
+Nico Elvedi
+Stephan Lichtsteiner
+Ricardo Rodríguez
+Josip Drmic
+Breel Embolo
+Mario Gavranovic
+Haris Seferovic
+SÉRVIA
+SRB
+/imagens/bandeiras/serbia.png
+/imagens/bandeiras-mini/serbia-mini.png
+/imagens/uniformes/serbia.png
+Vladimir Stojkovic
+Marko Dmitrovic
+Aleksandar Kolarov
+Antonio Rukavina
+Milan Rodic
+Branislav Ivanovic
+Aleksandar Mitrovic
+Aleksandar Prijovic
+Luka Jovic
+Nemanja Matic
+COSTA RICA
+CRC
+/imagens/bandeiras/costa-rica.png
+/imagens/bandeiras-mini/costa-rica-mini.png
+/imagens/uniformes/costa-rica.png
+Keylor Navas
+Patrick Pemberton
+Cristian Gamboa
+Ronald Matarita
+Bryan Oviedo
+Johnny Acosta
+Johan Venegas
+Joe Campbell
+Marcos Ureña
+Christian Bolaños
+MÉXICO
+MEX
+/imagens/bandeiras/mexico.png
+/imagens/bandeiras-mini/mexico-mini.png
+/imagens/uniformes/mexico.png
+Guillermo Ochoa
+Alfredo Talavera
+Héctor Moreno
+Carlos Salcedo
+Hugo Ayala
+Diego Reyes
+Javier Hernández
+Raúl Jiménez
+Héctor Herrera
+Hirving Lozano
+ALEMANHA
+GER
+/imagens/bandeiras/germany.png
+/imagens/bandeiras-mini/germany-mini.png
+/imagens/uniformes/germany.png
+Neuer
+Ter Stegen
+Kimmich
+Boateng
+Hummels
+Süle
+Kroos
+Thomas Müller
+Reus
+Ozil
+SUÉCIA
+SWE
+/imagens/bandeiras/sweden.png
+/imagens/bandeiras-mini/sweden-mini.png
+/imagens/uniformes/sweden.png
+Robin Olsen
+Karl-Johan Johnsson
+Mikael Lustig
+Emil Krafth
+Andreas Granqvist
+Victor Nilsson-Lindelöf
+Marcus Berg
+Ola Toivonen
+John Guidetti
+Isaac Kiese
+COREIA DO SUL
+KOR
+/imagens/bandeiras/south-korea.png
+/imagens/bandeiras-mini/south-korea-mini.png
+/imagens/uniformes/south-korea.png
+Kim Seung-gyu
+Kim Jin-hyeon
+Kim young-gwon
+Jang Hyun-soo
+Jung Seung-hyun
+Yun Yong-sun
+Kim Shin-wook
+Son Heung-min
+Ju Se-jong
+Hwang Hee-chan
+BÉLGICA
+BEL
+/imagens/bandeiras/belgium.png
+/imagens/bandeiras-mini/belgium-mini.png
+/imagens/uniformes/belgium.png
+Thibaut Courtois
+Simon Mignolet
+Vincent Kompany
+Thomas Meunier
+Thomas Vermaelen
+Jan Vertonghen
+Michy Batshuayi
+Eden Hazard
+Thorgan Hazard
+Romelu Lukaku
+INGLATERRA
+ENG
+/imagens/bandeiras/england.png
+/imagens/bandeiras-mini/england-mini.png
+/imagens/uniformes/england.png
+Pickford
+Butland
+Gary Cahill
+Stones
+Phil Jones
+Ashley Young
+Raheem Sterling
+Marcus Rashford
+Harry Kane
+Jamie Vardy
+PANAMÁ
+PAN
+/imagens/bandeiras/panama.png
+/imagens/bandeiras-mini/panama-mini.png
+/imagens/uniformes/panama.png
+José Calderón
+Jaime Penedo
+Felipe Baloy
+Harold Cummings
+Éric Davis
+Fidel Escobar
+Abdiel Arroyo
+Ismael Díaz
+Blas Pérez
+Luis Tejada
+TUNÍSIA
+TUN
+/imagens/bandeiras/tunisia.png
+/imagens/bandeiras-mini/tunisia-mini.png
+/imagens/uniformes/tunisia.png
+Aymen Mathlouthi
+Moez Ben Cherifia
+Rami Bedoui
+Yohan Benalouane
+Syam Ben Youssef
+Dylan Bronn
+Anice Badri
+Fakhreddine Ben Youssef
+Naim Sliti
+Bassem Srarfi
+JAPÃO
+JPN
+/imagens/bandeiras/japan.png
+/imagens/bandeiras-mini/japan-mini.png
+/imagens/uniformes/japan.png
+Eiji Kawashima
+Masaaki Higashiguchi
+Yuto Nagatomo
+Tomoaki Makino
+Maya Yoshida
+Hiroki Sakai
+Shinji Okazaki
+Yuya Osako
+Yoshinori Muto
+Takuma Asano
+SENEGAL
+SEN
+/imagens/bandeiras/senegal.png
+/imagens/bandeiras-mini/senegal-mini.png
+/imagens/uniformes/senegal.png
+Abdoulaye Diallo
+Alfred Gomis
+Kalidou Koulibaly
+Kara Mbodji
+Lamine Gassama
+Moussa Wagué
+M'Baye Niang
+Diafra Sakho
+Moussa Konaté
+Ismaïla Sarr
+POLÔNIA
+POL
+/imagens/bandeiras/poland.png
+/imagens/bandeiras-mini/poland-mini.png
+/imagens/uniformes/poland.png
+Bartosz Bialkowski
+Wojciech Szczesny
+Bartosz Bereszynski
+Thiago Cionek
+Kamil Glik
+Lukasz Piszczek
+Robert Lewandowski
+Dawid Kownacki
+Arkadiusz
+Lukasz Teodorczyk
+COLÔMBIA
+COL
+/imagens/bandeiras/colombia.png
+/imagens/bandeiras-mini/colombia-mini.png
+/imagens/uniformes/colombia.png
+Iván Arboleda
+José Fernando Cuadrado
+Cristian Zapata
+Yerry Mina
+Dávinson Sánchez
+Frank Fabra
+Miguel Borja
+Carlos Bacca
+Luis Fernando Muriel
+Duván Zapata
