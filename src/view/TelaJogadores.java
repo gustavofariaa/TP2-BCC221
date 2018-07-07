@@ -430,14 +430,6 @@ public final class TelaJogadores extends javax.swing.JInternalFrame {
             TelaTime.times.get(TelaTime.posicao).getJogador(jogadoresJogando.get(i)).setJogando(TRUE);
         }
 
-        //TESTE
-        //colocar nome dentro do metodo media
-        int media;
-        media = TelaTime.times.get(TelaTime.posicao).mediaAtacantes();
-        System.out.println(media);
-        media = TelaTime.times.get(TelaTime.posicao).mediaDefensores();
-        System.out.println(media);
-
         return true;
     }
 
@@ -448,7 +440,7 @@ public final class TelaJogadores extends javax.swing.JInternalFrame {
                 cbGoleiro.setSelectedIndex(i);
             }
         }
-        
+
         //COMBOBOX DEFESA
         int cont;
         for (int i = 2; i < 6; i++) {
@@ -477,7 +469,7 @@ public final class TelaJogadores extends javax.swing.JInternalFrame {
                 }
             }
         }
-        
+
         //COMBOBOX ATAQUE
         for (int i = 6; i < 10; i++) {
             if (TelaTime.times.get(TelaTime.posicao).getJogador(i).getJogando()) {

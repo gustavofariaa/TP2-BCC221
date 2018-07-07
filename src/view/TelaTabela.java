@@ -1,5 +1,7 @@
 package view;
 
+import partida.Campeonato;
+
 public class TelaTabela extends javax.swing.JFrame {
 
     private static int posicao;
@@ -345,48 +347,49 @@ public class TelaTabela extends javax.swing.JFrame {
 
         nomeGrupo.setText("GRUPO " + (char) num);
 
-        nomeTime1.setText(TelaTime.times.get(posicao - 4).getCodNome());
-        bandeiraTime1.setIcon(new javax.swing.ImageIcon(getClass().getResource(TelaTime.times.get(posicao - 4).getBandeiraMini())));
-        linha = "" + TelaTime.times.get(posicao - 4).getPontos();
+        
+        nomeTime1.setText(Campeonato.tabelaGrupos.get(posicao - 4).getCodNome());
+        bandeiraTime1.setIcon(new javax.swing.ImageIcon(getClass().getResource(Campeonato.tabelaGrupos.get(posicao - 4).getBandeiraMini())));
+        linha = "" + Campeonato.tabelaGrupos.get(posicao - 4).getPontos();
         pontosTime1.setText(linha);
-        linha = "" + TelaTime.times.get(posicao - 4).getVitorias();
+        linha = "" + Campeonato.tabelaGrupos.get(posicao - 4).getVitorias();
         vitoriasTime1.setText(linha);
-        linha = "" + TelaTime.times.get(posicao - 4).getDerrotas();
+        linha = "" + Campeonato.tabelaGrupos.get(posicao - 4).getDerrotas();
         derrotasTime1.setText(linha);
-        linha = "" + TelaTime.times.get(posicao - 4).getEmpates();
+        linha = "" + Campeonato.tabelaGrupos.get(posicao - 4).getEmpates();
         empatesTime1.setText(linha);
 
-        nomeTime2.setText(TelaTime.times.get(posicao - 3).getCodNome());
-        bandeiraTime2.setIcon(new javax.swing.ImageIcon(getClass().getResource(TelaTime.times.get(posicao - 3).getBandeiraMini())));
-        linha = "" + TelaTime.times.get(posicao - 3).getPontos();
+        nomeTime2.setText(Campeonato.tabelaGrupos.get(posicao - 3).getCodNome());
+        bandeiraTime2.setIcon(new javax.swing.ImageIcon(getClass().getResource(Campeonato.tabelaGrupos.get(posicao - 3).getBandeiraMini())));
+        linha = "" + Campeonato.tabelaGrupos.get(posicao - 3).getPontos();
         pontosTime2.setText(linha);
-        linha = "" + TelaTime.times.get(posicao - 3).getVitorias();
+        linha = "" + Campeonato.tabelaGrupos.get(posicao - 3).getVitorias();
         vitoriasTime2.setText(linha);
-        linha = "" + TelaTime.times.get(posicao - 3).getDerrotas();
+        linha = "" + Campeonato.tabelaGrupos.get(posicao - 3).getDerrotas();
         derrotasTime2.setText(linha);
-        linha = "" + TelaTime.times.get(posicao - 3).getEmpates();
+        linha = "" + Campeonato.tabelaGrupos.get(posicao - 3).getEmpates();
         empatesTime2.setText(linha);
 
-        nomeTime3.setText(TelaTime.times.get(posicao - 2).getCodNome());
-        bandeiraTime3.setIcon(new javax.swing.ImageIcon(getClass().getResource(TelaTime.times.get(posicao - 2).getBandeiraMini())));
-        linha = "" + TelaTime.times.get(posicao - 2).getPontos();
+        nomeTime3.setText(Campeonato.tabelaGrupos.get(posicao - 2).getCodNome());
+        bandeiraTime3.setIcon(new javax.swing.ImageIcon(getClass().getResource(Campeonato.tabelaGrupos.get(posicao - 2).getBandeiraMini())));
+        linha = "" + Campeonato.tabelaGrupos.get(posicao - 2).getPontos();
         pontosTime3.setText(linha);
-        linha = "" + TelaTime.times.get(posicao - 2).getVitorias();
+        linha = "" + Campeonato.tabelaGrupos.get(posicao - 2).getVitorias();
         vitoriasTime3.setText(linha);
-        linha = "" + TelaTime.times.get(posicao - 2).getDerrotas();
+        linha = "" + Campeonato.tabelaGrupos.get(posicao - 2).getDerrotas();
         derrotasTime3.setText(linha);
-        linha = "" + TelaTime.times.get(posicao - 2).getEmpates();
+        linha = "" + Campeonato.tabelaGrupos.get(posicao - 2).getEmpates();
         empatesTime3.setText(linha);
 
-        nomeTime4.setText(TelaTime.times.get(posicao - 1).getCodNome());
-        bandeiraTime4.setIcon(new javax.swing.ImageIcon(getClass().getResource(TelaTime.times.get(posicao - 1).getBandeiraMini())));
-        linha = "" + TelaTime.times.get(posicao - 1).getPontos();
+        nomeTime4.setText(Campeonato.tabelaGrupos.get(posicao - 1).getCodNome());
+        bandeiraTime4.setIcon(new javax.swing.ImageIcon(getClass().getResource(Campeonato.tabelaGrupos.get(posicao - 1).getBandeiraMini())));
+        linha = "" + Campeonato.tabelaGrupos.get(posicao - 1).getPontos();
         pontosTime4.setText(linha);
-        linha = "" + TelaTime.times.get(posicao - 1).getVitorias();
+        linha = "" + Campeonato.tabelaGrupos.get(posicao - 1).getVitorias();
         vitoriasTime4.setText(linha);
-        linha = "" + TelaTime.times.get(posicao - 1).getDerrotas();
+        linha = "" + Campeonato.tabelaGrupos.get(posicao - 1).getDerrotas();
         derrotasTime4.setText(linha);
-        linha = "" + TelaTime.times.get(posicao - 1).getEmpates();
+        linha = "" + Campeonato.tabelaGrupos.get(posicao - 1).getEmpates();
         empatesTime4.setText(linha);
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables

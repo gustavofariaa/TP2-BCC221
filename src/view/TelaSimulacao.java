@@ -6,7 +6,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import partida.Campeonato;
-import static partida.Campeonato.tabelaGrupos;
 import partida.Time;
 
 public class TelaSimulacao extends javax.swing.JInternalFrame {
@@ -17,7 +16,7 @@ public class TelaSimulacao extends javax.swing.JInternalFrame {
         //EXIBI GIF ALEATORIO
         Random aleatorio = new Random();
         String texto;
-        texto = "/imagens/gols/" + aleatorio.nextInt(1) + ".gif";
+        texto = "/imagens/gols/" + aleatorio.nextInt(3) + ".gif";
         tGol.setIcon(new javax.swing.ImageIcon(getClass().getResource(texto)));
 
         //***CONVERTER ARRAY DE TIMES EM MATRIZ***
@@ -114,7 +113,7 @@ public class TelaSimulacao extends javax.swing.JInternalFrame {
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
-        tGol.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/gols/0.gif"))); // NOI18N
+        tGol.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/gols/1.gif"))); // NOI18N
 
         jLabel6.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel6.setText("Melhor momento");
@@ -139,7 +138,7 @@ public class TelaSimulacao extends javax.swing.JInternalFrame {
                 .addComponent(jLabel6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(tGol)
-                .addContainerGap(45, Short.MAX_VALUE))
+                .addContainerGap(43, Short.MAX_VALUE))
         );
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));

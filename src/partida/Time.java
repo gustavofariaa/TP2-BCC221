@@ -2,7 +2,6 @@ package partida;
 
 import jogadores.JogadorAtacante;
 import jogadores.Jogador;
-import jogadores.JogadorDefesa;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -125,29 +124,6 @@ public class Time {
             }
         }
         return (soma / quantidade);
-    }
-
-    public void imprimirJogadores() {
-        JogadorAtacante atacante;
-        atacante = new JogadorAtacante();
-        JogadorDefesa defensor;
-        defensor = new JogadorDefesa();
-
-        System.out.println(this.nome);
-        this.jogadores.stream().map((i) -> {
-            if (i.getClass() == atacante.getClass()) {
-                System.out.println("Atacante");
-            } else if (i.getClass() == defensor.getClass()) {
-                System.out.println("Defensor");
-            } else {
-                System.out.println("Goleiro");
-            }
-            return i;
-        }).forEachOrdered((i) -> {
-            System.out.println(i.getNome());
-        });
-        System.out.print("\n");
-
     }
 
     public void imprimirResultados() {
