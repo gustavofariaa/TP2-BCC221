@@ -16,6 +16,7 @@ public class JogadorAtacante extends Jogador {
 
     @Override
     public void setHabilidade() {
+        //EDITA O VALOR DA HABILADE DO JGOADOR ATACANTE
         this.habilidade = ((habilidade * 5) + (this.velocidade * 2) + (this.tecnica * 3)) / 10;
     }
 }

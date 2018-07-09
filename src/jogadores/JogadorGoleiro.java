@@ -16,6 +16,7 @@ public class JogadorGoleiro extends Jogador {
 
     @Override
     public void setHabilidade() {
+        //EDITA O VALOR DA HABILADE DO GOLEIRO
         this.habilidade = ((habilidade * 5) + ((int) (this.altura * 100) * 2) + (this.reflexo * 3)) / 10;
     }
 }

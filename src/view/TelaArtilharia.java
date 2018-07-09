@@ -103,6 +103,7 @@ public class TelaArtilharia extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+        setTitle("Artilharia | World Cup 2018 ");
         setMaximumSize(null);
         setMinimumSize(null);
         setResizable(false);

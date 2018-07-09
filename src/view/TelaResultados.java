@@ -88,6 +88,7 @@ public final class TelaResultados extends javax.swing.JFrame {
         tFase = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+        setTitle("Resultados | World Cup 2018 ");
         setResizable(false);
 
         bSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/menu/x-button.png"))); // NOI18N

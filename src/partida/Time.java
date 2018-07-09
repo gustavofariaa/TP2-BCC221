@@ -54,12 +54,14 @@ public class Time {
         }
     }
 
-    public ArrayList<Jogador> getJogadores() {
-        return jogadores;
+    public void inserirJogador(Jogador jogador) {
+        //INSERE UM JOGADOR NO TIME
+        this.jogadores.add(jogador);
     }
 
-    public void inserirJogador(Jogador jogador) {
-        this.jogadores.add(jogador);
+    public ArrayList<Jogador> getJogadores() {
+        //RETORNA LISTA DE JOGADORES
+        return jogadores;
     }
 
     public void jogadoresJogando() {
@@ -85,20 +87,24 @@ public class Time {
     }
 
     public void somarVitoria() {
+        //SOMA UMA VITORIA E 3 PONTOS PARA O TIME
         this.vitorias++;
         this.pontos += 3;
     }
 
     public void somarDerrota() {
+        //SOMA UMA DERTOTA PARA O TIME
         this.derrotas++;
     }
 
     public void somarEmpate() {
+        //SOMA UM EMPATE E 1 PONTOS PARA O TIME
         this.empates++;
         this.pontos += 1;
     }
 
     public int mediaAtacantes() {
+        //MEDIA DE HABILIDADE DOS JOGADORES DO ATAQUE
         JogadorAtacante atacante;
         atacante = new JogadorAtacante();
         int soma = 0, quantidade = 0;
@@ -113,6 +119,7 @@ public class Time {
     }
 
     public int mediaDefensores() {
+        //MEDIA DE HABILIDADE DOS JOGADORES DA DEFESA
         JogadorAtacante atacante;
         atacante = new JogadorAtacante();
         int soma = 0, quantidade = 0;
@@ -126,57 +133,63 @@ public class Time {
         return (soma / quantidade);
     }
 
-    public void imprimirResultados() {
-        System.out.println("Vitórias: " + this.vitorias);
-        System.out.println("Derrotas: " + this.derrotas);
-        System.out.println("Empates: " + this.empates);
-    }
-
     public String getNome() {
+        //RETORNA NOME DO TIME
         return this.nome;
     }
 
     public String getCodNome() {
+        //RETORNA NOME DO TIME EM FORMATO DE EXIBIÇÃO EM PLACAR
         return this.codNome;
     }
 
     public Jogador getJogador(int n) {
+        //RETORNA UM JOGADOR EM UMA POSICAO ESPECIFICA DA LISA DE JOGADORES
         return this.jogadores.get(n);
     }
 
     public String getBandeira() {
+        //RETORNA O CAMINHO PARA A IMAGEM DA BANDEIRA DO TIME
         return this.bandeira;
     }
 
     public String getBandeiraMini() {
+        //RETORNA O CAMINHO PARA A IMAGEM DA MINI BANDEIRA DO TIME
         return this.bandeiraMini;
     }
 
     public String getUniforme() {
+        //RETORNA O CAMINHO PARA A IMAGEM DO UNIFORME DO TIME
         return this.uniforme;
     }
 
     public int getVitorias() {
+        //RETORNA A QUANTIDADE DE VITORIAS DO TIME
         return this.vitorias;
     }
 
     public int getDerrotas() {
+        //RETORNA A QUANTIDADE DE DERROTAS DO TIME
         return this.derrotas;
     }
 
     public int getEmpates() {
+        //RETORNA A QUANTIDADE DE EMPATES DO TIME
         return this.empates;
     }
 
     public int getPontos() {
+        //RETORNA A QUANTIDADE DE PONTOS DO TIME
         return pontos;
     }
 
     public void setTatica(int tatica) {
+        //ATRIBUI O CODIGO (0 ~ 2) DA TATICA AO TIME
         this.tatica = tatica;
     }
 
     public int getTatica() {
+        //RETORNA A O NUMERO DA TATICA DO TIME
         return tatica;
     }
 }

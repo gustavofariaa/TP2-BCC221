@@ -52,7 +52,7 @@ public class TelaTabela extends javax.swing.JFrame {
         nomeTime4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
-        setTitle("Tabela");
+        setTitle("Tabelas | World Cup 2018 ");
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setMaximumSize(new java.awt.Dimension(350, 420));
         setMinimumSize(new java.awt.Dimension(350, 420));
@@ -318,6 +318,7 @@ public class TelaTabela extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void bProxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bProxActionPerformed
+        //EXIBE TABELA DO PROXIMO GRUPO
         if (posicao <= 28) {
             posicao += 4;
             this.tabela();
@@ -328,6 +329,7 @@ public class TelaTabela extends javax.swing.JFrame {
     }//GEN-LAST:event_bProxActionPerformed
 
     private void bAntActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bAntActionPerformed
+        //EXIBE TABELA DO GRUPO ANTERIOR
         if (posicao > 4) {
             posicao -= 4;
             this.tabela();

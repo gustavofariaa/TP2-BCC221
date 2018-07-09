@@ -129,6 +129,7 @@ public class TelaTime extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_bSelActionPerformed
 
     private void bProActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bProActionPerformed
+        //EXIBE PROXIMO TIME
         if (posicao < 32) {
             posicao++;
         }
@@ -143,6 +144,7 @@ public class TelaTime extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_bProActionPerformed
 
     private void bAntActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bAntActionPerformed
+        //EXIBE TIME ANTERIOR
         if (posicao > -1) {
             posicao--;
         }
@@ -157,15 +159,14 @@ public class TelaTime extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_bAntActionPerformed
 
     public static void gerarTimes(ArrayList<Time> time) {
+        //GERA TODOS OS TIMES
         Random aleatorio = new Random();
         int numTimes = 32;
-        
         //LEITURA DE ARQUIVOS COM DADOS DOS TIMES
         try {
             Scanner entrada;
             entrada = new Scanner(new File("times.txt"));
             Jogador jogador;
-            
             //TIMES
             String nome, linha, bandeira, bandeiraMini, uniforme;
             for (int i = 0; i < numTimes; i++) {

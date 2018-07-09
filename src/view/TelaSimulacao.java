@@ -12,14 +12,12 @@ public class TelaSimulacao extends javax.swing.JInternalFrame {
 
     public TelaSimulacao() {
         initComponents();
-
         //EXIBI GIF ALEATORIO
         Random aleatorio = new Random();
         String texto;
         texto = "/imagens/gols/" + aleatorio.nextInt(3) + ".gif";
         tGol.setIcon(new javax.swing.ImageIcon(getClass().getResource(texto)));
-
-        //***CONVERTER ARRAY DE TIMES EM MATRIZ***
+        //CONVERTE ARRAYLIST DE TIMES EM MATRIZ
         Time[][] grupos = new Time[8][4];
         int k = 0;
         for (int i = 0; i < 8; i++) {
@@ -28,18 +26,14 @@ public class TelaSimulacao extends javax.swing.JInternalFrame {
                 k++;
             }
         }
-
-        //***PASSAR PARA OS PROXIMOS METODOS***
+        //COPA DO MUNDO RUSSIA 2018
         Campeonato.faseGrupos(grupos);
         Time vencedor = Campeonato.copa(grupos);
-
         //CAMPEAO DA COPA DO MUNDO
         campeao.setText(vencedor.getNome());
         bandeiraCampeao.setIcon(new javax.swing.ImageIcon(getClass().getResource(vencedor.getBandeiraMini())));
-
         //GERA TABELA DE ARTILHARIA
         Campeonato.artilharia(TelaTime.times);
-
         //GERA TABELA DE GRUPOS
         Campeonato.criarTabelaGrupos(TelaTime.times);
 
@@ -232,7 +226,7 @@ public class TelaSimulacao extends javax.swing.JInternalFrame {
 
     private void bMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bMenuActionPerformed
         //VOLTA PARA O MENU CASO NENHUMA OUTRA TELA ESTEJA ABERTA
-        if (Menu.controle == true) {
+        if (Menu.controle) {
             JOptionPane.showMessageDialog(null, "      Você deixou algum menu aberto.\nPor favor, feche para voltar a tela principal.");
         } else {
             try {
@@ -245,7 +239,7 @@ public class TelaSimulacao extends javax.swing.JInternalFrame {
 
     private void bTabelaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bTabelaActionPerformed
         //EXIBI TELA DE TABELAS CASO NENHUMA OUTRA TELA ESTEJA ABERTA
-        if (Menu.controle == true); else {
+        if (Menu.controle); else {
             new TelaTabela().setVisible(true);
             Menu.controle = true;
         }
@@ -253,7 +247,7 @@ public class TelaSimulacao extends javax.swing.JInternalFrame {
 
     private void bArtilhariaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bArtilhariaActionPerformed
         //EXIBI TELA DE ARTILHARIA CASO NENHUMA OUTRA TELA ESTEJA ABERTA
-        if (Menu.controle == true); else {
+        if (Menu.controle); else {
             new TelaArtilharia().setVisible(true);
             Menu.controle = true;
         }
@@ -261,7 +255,7 @@ public class TelaSimulacao extends javax.swing.JInternalFrame {
 
     private void bResultadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bResultadosActionPerformed
         //EXIBI TELA DE RESULTADOS CASO NENHUMA OUTRA TELA ESTEJA ABERTA
-        if (Menu.controle == true); else {
+        if (Menu.controle); else {
             new TelaResultados().setVisible(true);
             Menu.controle = true;
         }
