@@ -60,5 +60,5 @@ The development of the FIFA World Cup Russia 2018 Simulator, we utilized the fol
 
 ## Authors
 
-- ]@gustavofariaa)(https://github.com/gustavofariaa)
-- ]@riibeirogabriel)(https://github.com/riibeirogabriel)
+- [@gustavofariaa](https://github.com/gustavofariaa)
+- [@riibeirogabriel](https://github.com/riibeirogabriel)
